@@ -16,15 +16,10 @@
 triangle <- function(x) {
 
   if (is.triangle(x)) {
-
     class(x) <- c("triangle",class(x))
     return(x)
-
   } else {
-
-    return()
-
+    stop("Object is not a valid triangle")
   }
-
 
 }
